@@ -3,6 +3,10 @@
 浅色模式下，把对话底部运行状态（“深度求索中，用时 …”）旁边的小鲸鱼动画换成自定义动图；
 深色模式保持官方默认小鲸鱼。
 
+![浅色模式运行状态动画预览](https://raw.githubusercontent.com/illusionaries/dsh-running-whale-skin/main/assets/preview.gif)
+
+> 预览：浅色模式下“深度求索中，用时 …”左侧的动画（实际显示尺寸约 14×14 px）。
+
 ## 做了什么
 
 - 只注入一段样式表（Client half），不改官方包、不需要重启。
