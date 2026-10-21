@@ -1,0 +1,5 @@
+# dsh-running-whale-skin — light-mode skin for the running "深度求索中" status.
+# The Client half injects one stylesheet; no Host service is involved.
+- insert:
+    - id: running-whale-skin
+      name: dsh-running-whale-skin

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Running Whale Skin",
+    "description": "Replaces the light-mode animation beside the running \"Deep diving\" status with a custom animated mark; dark mode keeps the default whale."
+  }
+}

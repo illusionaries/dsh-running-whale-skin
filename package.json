@@ -1,0 +1,54 @@
+{
+  "name": "dsh-running-whale-skin",
+  "version": "0.1.0",
+  "description": "Swaps the light-mode animation of the running \"Deep diving\" status for a custom animated mark.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "theme",
+    "ui"
+  ],
+  "license": "MIT",
+  "author": "嘉",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "PROVENANCE.md",
+    "assets/whale-64.gif",
+    "tools/build-client.mjs"
+  ],
+  "scripts": {
+    "build": "node tools/build-client.mjs",
+    "prepublishOnly": "node tools/build-client.mjs"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
